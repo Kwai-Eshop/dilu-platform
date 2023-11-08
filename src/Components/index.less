@@ -1,0 +1,26 @@
+// 搜索人员样式
+@prefix: ~'debounceSelect';
+.@{prefix}-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 28px;
+  width: auto;
+  .@{prefix}-item-pic {
+    margin-right: 10px;
+    img {
+      width: 26px;
+      height: 26px;
+      border-radius: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .@{prefix}-item-pic-bg {
+      width: 26px;
+      height: 26px;
+      border-radius: 100%;
+      background: url(../Assets/Images/user.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

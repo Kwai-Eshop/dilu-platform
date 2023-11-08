@@ -1,0 +1,74 @@
+.container {
+}
+.header {
+  padding: 0 !important;
+  :global(.ant-page-header-heading-extra) {
+    display: flex;
+    align-items: center;
+  }
+  .headerInfo {
+    padding: 16px 16px 0;
+    background: #f5f7f9;
+  }
+}
+.body {
+  margin-top: 20px;
+}
+.searchForm {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.status {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    top: 50%;
+    margin-top: -3px;
+    left: -10px;
+  }
+
+  &__green {
+    color: #1cc25e;
+    &::before {
+      background: #1cc25e;
+    }
+  }
+
+  &__orange {
+    color: #f6bd16;
+    &::before {
+      background: #f6bd16;
+    }
+  }
+  &__red {
+    color: #ff4500;
+    &::before {
+      background: #ff4500;
+    }
+  }
+}
+
+.entryLink {
+  word-break: break-all;
+}
+
+.ellipsis {
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.approveStep {
+  :global {
+    .ant-steps-item-title {
+      font-size: 14px;
+    }
+  }
+}

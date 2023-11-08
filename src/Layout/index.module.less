@@ -1,0 +1,96 @@
+.app {
+  font-size: 14px;
+}
+
+.container {
+  // width: 1440px;
+  width: 100%;
+  margin: auto;
+  .content {
+    margin: 20px;
+    // width: auto !important;
+    // width: 100% !important;
+  }
+}
+
+.header {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 54px;
+    height: 54px;
+    background: url('../Assets/Images/dilu_white.png') center / 54px 54px no-repeat;
+    cursor: pointer;
+  }
+
+  .title {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .action {
+    margin-right: 20px;
+    cursor: pointer;
+
+    .guideIcon {
+      margin-left: 5px;
+      height: 16px;
+    }
+  }
+
+  .info {
+    margin-left: 10px;
+  }
+}
+
+.content {
+  margin: 20px 0 20px 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.footer {
+  text-align: center;
+  background-color: #fff;
+}
+
+.layout-sider {
+  // height: 100%;
+  background-color: #fff;
+  position: relative;
+
+  .layout-sider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    color: #434343;
+    font-size: 30px;
+
+    // .layout-sider-icon {
+    //   height: 30px;
+    //   width: 30px;
+    // }
+
+    .layout-sider-text {
+      font-size: 12px;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+  }
+}
